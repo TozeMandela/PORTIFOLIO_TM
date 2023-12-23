@@ -6,11 +6,16 @@
 }
 
 .main {
+    color: $priColor;
     background: radial-gradient(circle at 32% 90%, $colorOne,$colorTwo);
 }
 
 .cabecalho {
     background: $colorTwo1;
+}
+.cabecalho div .logo p a{
+    text-decoration: none;
+    color: #150714;
 }
 
 .img-container {
@@ -23,17 +28,30 @@
 }
 
 .name {
-    color: $colorTwo;
+    color: $treColor;
     font-weight: 700;
 }
 
 .work {
     font-size: 20px;
-    color: $colorTwo;
+    color: $treColor;
+}
+.describe {
+    color: $treColor;
 }
 
+.goLinkedin a{
+    border-color: $treColor;
+    color: $priColor;
+
+    &:hover {
+        border-color: $priColor;
+        color: $treColor;
+        background-color: $priColor;
+    }
+}
 .function {
-    color: #000;
+    color: $priColor;
     position: relative;
 }
 
@@ -57,5 +75,15 @@
     }
     100% {
         left: 0;
+    }
+}
+
+.service {
+    font-size: 30px;
+    font-weight: 700;
+
+    span{
+        color: $treColor;
+        border-bottom: 4px solid $priColor;
     }
 }
