@@ -17,7 +17,13 @@
     text-decoration: none;
     color: #150714;
 }
+.logo p *{
+    font-size: 30px;
 
+    &:hover {
+        color: $priColor;
+    }
+}
 .img-container {
     border-radius: 100px;
     overflow: hidden;
@@ -38,6 +44,7 @@
 }
 .describe {
     color: $treColor;
+    text-align: justify;
 }
 
 .goLinkedin a{
@@ -86,4 +93,42 @@
         color: $treColor;
         border-bottom: 4px solid $priColor;
     }
+}
+.icon *{
+    font-size: 20px;
+    color: $priColor
+}
+.aside-academia {
+    color: #150714;
+}
+.service-description {
+    color: $treColor;
+}
+.forColumn {
+    font-size: 15px;
+    color: $treColor;
+}
+ .strong {
+    font-size: 14px;
+}
+.oneArticle, .twoArticle {
+    margin-bottom: 20px;
+}
+
+.habilidades .images img {
+    max-width: 60px;
+}
+
+.habilidades .images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 15px;
+}
+
+.rodape div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $treColor;
 }

@@ -1,166 +1,444 @@
 <!DOCTYPE html>
 <html lang="pt-Pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="shortcut icon" href="./public/images/favicon/favicon.ico" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="shortcut icon"
+      href="./public/images/favicon/favicon.ico"
+      type="image/x-icon"
+    />
     <!-- aos scroll -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
 
-    <link rel="stylesheet" href="./public/css/styles.css">
+    <link rel="stylesheet" href="./public/css/styles.css" />
 
     <title>portifolio - Tozé Mandela</title>
-</head>
-<body>
-    
+  </head>
+  <body>
     <main class="main">
-        <header class="cabecalho">
-            <div class="container-fluid  d-flex align-items-center justify-content-between">
-                <div class="logo">
-                    <p class="h1"><a href="#intro">TM</a></p>
+      <header class="cabecalho">
+        <div
+          class="container-fluid d-flex align-items-center justify-content-between"
+        >
+          <div class="logo" id="contact">
+            <p class="h1">
+                <a href="https://wa.me/244937537126" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                <a href="https://www.instagram.com/mandelajr12/" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://mailto:mandelajunior10@gmail.com" target="_blank"><i class="bi bi-envelope-at"></i></a>
+            </p>
+          </div>
+
+          <nav class="menu">
+            <nav class="navbar navbar-expand-lg">
+              <div class="container-fluid">
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                  class="collapse navbar-collapse"
+                  id="navbarSupportedContent"
+                >
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link active"
+                        aria-current="page"
+                        href="#intro"
+                        >Inicio</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#/about">Sobre-min</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#services">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#skills">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">contacto</a>
+                    </li>
+                  </ul>
                 </div>
-                <nav class="menu">
-                    <nav class="navbar navbar-expand-lg">
-                        <div class="container-fluid">
-                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                          </button>
-                          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                              <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#intro">Inicio</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="#about">Sobre-min</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="#">Projectos</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="#">Habilidades</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="#">contactos</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </nav>
-                </nav>
-            </div>
-        </header>
-        <section class="bady-conteudo py-5">
-            <div class="container-fluid">
-                <section class="introduce-container" id="intro">
-                    <article class="whois row">
-                        <div class="col-md-1"></div>
-                        <section class="col-md-5 d-flex justify-content-center align-items-center">
-                            <div class="introduce">
-                                <p class="paragraph display-5">Olá!!!</p>
-                                <h2>Eu sou o <span class="name">Tozé Mandela</span></h2>
-                                <h6 class="display-6 work"> & atuo no mercado como <span class="function">Programador Full-Stack Júnior</span></h6>
-                                <div class="goLinkedin my-4">
-                                    <a href="https://www.linkedin.com/in/toz%C3%A9-mandela-4a44b521b/" target="_blank" class="btn border p-2">Visitar LinkedIn <i class="bi bi-linkedin"></i></a>
-                                </div>
-                            </div>
-                        </section>
-                        <aside class="col-md-5">
-                            <div class="img-container">
-                                <img src="./public/images/me.jpg" alt="my face" class="img-fluid">
-                            </div>
-                        </aside>
-                    </article>
-                </section>
-                <aside class="about mt-5">
-                    <div>
-                        <div>
-                            <div class="row">
-                                <div class="col-md-2"></div>
-                                <div class="col-md-8">
-                                    <hr>
-                                    <div data-aos="flip-left">
-                                        <h5 class="display-6 text-center about">SOBRE MIN</h5>
-                                    </div>
-                                </div>
-                                <div class="col-md-2"></div>
-                            </div>
-                            <article class="row">
-                                <div class="col-md-1"></div>
-                                <div class="describe col-md-7">
-                                    <p class="paragraph" data-aos="fade-right" id="about">Mais uma vez Olá! muitos se dirigem a mim apenas pelo meu sobrenome (Mandela), mais esteja avontade para usar qualquer um dos meus nomes acima citado. Programador apaixonado pela área de tecnologias de informação, Com uma formação em Engenharia em Informatica (ainda em curso) na universidade Metropolitana de Angola.</p>
-
-                                    <p class="paragraph" data-aos="fade-right">Minha paixão reside em back-end e na criação de soluções inovadoras. Acredito firmemente na importância de criar projectos com codigos limpo para que facilite na manuntenção e busco integrá-lo em cada projeto.</p>
-
-                                    
-                                    <p class="paragraph" data-aos="fade-right">Meu objetivo numa primeira fase é continuar evoluindo, fazendo parte de varios projectos, ajudar a terminar ou terminar todos com excelência e no final me tornar sênior com ou de qualidade.</p> 
-
-                                    <p class="paragraph" data-aos="fade-right">Estou sempre aberto a novas oportunidades e colaborações. Se você estiver interessado em discutir projetos, oportunidades profissionais ou apenas trocar ideias, não hesite me contatar...</p>
-
-                                    <p class="h6 paragraph" data-aos="fade-right">Agradeço por visitar meu portfólio e estou ansioso para conectar | trabalhar | colaborar com você!</p>
-
-                                </div>
-                                <div class="col-md-3">
-                                    <h6 class="paragraph" data-aos="fade-right">Instituições de ensino que têm colaborado e ajudado a alavancar meu conhecimento na área:</h6>
-        
-                                            <ul data-aos="fade-right">
-                                                <li>Instituto Politecnico Privado Metropolitana de Angola</li>
-                                                <li>Udemy</li>
-                                                <li>Rocketseet</li>
-                                                <li>OneBitCode</li>
-                                                <li>Curso em video</li>
-                                                <li>Youtube e seus diversos canais onde profissionais qualificados postam variados conteudo.</li>
-                                            </ul>
-        
-                                </div>
-                                <div class="col-md-1"></div>
-                            </article>
-                        </div>
-                        
+              </div>
+            </nav>
+          </nav>
+        </div>
+      </header>
+      <section class="bady-conteudo py-5">
+        <div class="container-fluid">
+          <section class="introduce-container" id="intro">
+            <article class="whois row">
+              <div class="col-md-1"></div>
+              <section
+                class="col-lg-5 d-flex justify-content-center align-items-center"
+              >
+                <div class="introduce">
+                  <p class="paragraph display-5">Olá!!!</p>
+                  <h2>Eu sou o <span class="name">Tozé Mandela</span></h2>
+                  <h6 class="display-6 work">
+                    & atuo no mercado como
+                    <span class="function">Programador Full-Stack</span>
+                  </h6>
+                  <div class="goLinkedin my-4">
+                    <a
+                      href="https://www.linkedin.com/in/toz%C3%A9-mandela-4a44b521b/"
+                      target="_blank"
+                      class="btn border p-2"
+                      >Visitar LinkedIn <i class="bi bi-linkedin"></i
+                    ></a>
+                  </div>
+                </div>
+              </section>
+              <aside class="col-lg-5">
+                <div class="img-container">
+                  <img
+                    src="./public/images/me.jpg"
+                    alt="my face"
+                    class="img-fluid"
+                  />
+                </div>
+              </aside>
+            </article>
+          </section>
+          <aside class="about mt-5">
+            <div>
+              <div>
+                <div class="row">
+                  <div class="col-md-2"></div>
+                  <div class="col-md-8">
+                    <hr />
+                    <div class="col-md-1"></div>
+                    <div class="col-md-1">
+                      <p
+                        class="paragraph service"
+                        data-aos="fade-down"
+                        data-aos-easing="linear"
+                        data-aos-duration="1000"
+                      >
+                        <span>Sobr</span>e_min
+                      </p>
                     </div>
-                </aside>
-                <article class="project my-4">
-                    <div class="project row">
-                        <div class="col-md-1"></div>
-                        <div class="col-md-1"><p class="paragraph service"><span>Serv</span>iços</p></div>
-                        <div class="col-md-1"></div>
-                    </div>
-                    <div class="project row">
-                        <div class="col-md-1"></div>
-                        <div class="col-md-6">
-                            <p class="paragraph">Se você precisa de alguém para desenvolver um aplicativo, 
-                            site pessoal, comercial ou até mesmo uma simples landing page você está no lugar certo!</p>
-                            <p class="paragraph">
-                                Realizo as entregas dos projetos através do Github em um repositório privado ou público, 
-                                com o intuito de manter o código sempre versionado, facilitando o processo de controle de 
-                                histórico.
-                            </p>
-                        </div>
-                        <div class="col-md-4 border">
+                    <div class="col-md-1"></div>
+                  </div>
+                  <div class="col-md-2"></div>
+                </div>
+                <article class="row">
+                  <div class="col-md-1"></div>
+                  <div class="describe col-md-7">
+                    <p
+                      class="paragraph"
+                      data-aos="fade-right"
+                      data-aos-duration="1000"
+                      id="about"
+                    >
+                      Mais uma vez Olá! muitos se dirigem a mim apenas pelo meu
+                      sobrenome (Mandela), mais esteja avontade para usar
+                      qualquer um dos meus nomes acima citado. Programador
+                      apaixonado pela área de tecnologias de informação, Com uma
+                      formação em Engenharia em Informatica (ainda em curso) na
+                      universidade Metropolitana de Angola.
+                    </p>
 
-                        </div>
-                    </div>
+                    <p
+                      class="paragraph"
+                      data-aos="fade-right"
+                      data-aos-duration="1000"
+                    >
+                      Minha paixão reside em back-end e na criação de soluções
+                      inovadoras. Acredito firmemente na importância de criar
+                      projectos com codigos limpo para que facilite na
+                      manuntenção e busco integrá-lo em cada projeto. Meu
+                      objetivo numa primeira fase é continuar evoluindo, fazendo
+                      parte de varios projectos, ajudar a terminar ou terminar
+                      todos com excelência e no final me tornar sênior com ou de
+                      qualidade.
+                    </p>
+
+                    <p
+                      class="paragraph"
+                      data-aos="fade-right"
+                      data-aos-duration="1000"
+                    >
+                      Estou sempre aberto a novas oportunidades e colaborações.
+                      Se você estiver interessado em discutir projetos,
+                      oportunidades profissionais ou apenas trocar ideias, não
+                      hesite me contatar...
+                    </p>
+                  </div>
+                  <div class="col-md-3 aside-academia"></div>
+                  <div class="col-md-1"></div>
                 </article>
+              </div>
+            </div>
+          </aside>
+          <article class="project my-4">
+            <div class="project row">
+              <div class="col-md-1"></div>
+              <div class="col-md-1">
+                <p
+                  id="services"
+                  class="paragraph service"
+                  data-aos="fade-down"
+                  data-aos-easing="linear"
+                  data-aos-duration="1000"
+                >
+                  <span>Serv</span>iços
+                </p>
+              </div>
+              <div class="col-md-1"></div>
+            </div>
+            <div class="project my-4 row">
+              <div class="col-md-1"></div>
+              <div class="col-md-5 service-description">
+                <p
+                  class="paragraph"
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                >
+                  Se você precisa de alguém para desenvolver um aplicativo, site
+                  pessoal, comercial ou até mesmo uma simples landing page você
+                  está no lugar certo!
+                </p>
+                <p
+                  class="paragraph"
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                >
+                  Realizo as entregas dos projetos através do Github em um
+                  repositório privado ou público, com o intuito de manter o
+                  código sempre versionado, facilitando o processo de controle
+                  de histórico.
+                </p>
+                <div class="goLinkedin my-4">
+                  <a
+                    href="https://github.com/TozeMandela"
+                    target="_blank"
+                    class="btn border p-2"
+                    >Visitar repositorio GitHub
+                    <i class="devicon-github-original colored"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <article class="row forColumn">
+                  <div class="col-lg-6">
+                    <h6>
+                      Desenvolvimento
+                      <span class="icon"><i class="bi bi-code-slash"></i></span>
+                    </h6>
+                    <article
+                      class="oneArticle"
+                      data-aos="fade-down-right"
+                      data-aos-duration="1000"
+                    >
+                      Desenvolvimento de projetos end-to-end, criando API's no
+                      padrão REST e criando websites dinâmicos ou estáticos.
+                    </article>
+                  </div>
+                  <div class="col-lg-6">
+                    <h6 class="strong">
+                      Compatível com dispositivos móveis
+                      <span class="icon"><i class="bi bi-phone"></i></span>
+                    </h6>
+                    <article
+                      class="twoArticle"
+                      data-aos="fade-down-left"
+                      data-aos-duration="1000"
+                    >
+                      Design responsivo tornando seu site acessível,
+                      independentemente do dispositivo. Criando telas a partir
+                      do conceito Mobile First.
+                    </article>
+                  </div>
+                  <div class="col-lg-6">
+                    <h6>
+                      Análise
+                      <span class="icon"><i class="bi bi-search"></i></span>
+                    </h6>
+                    <article
+                    class="oneArticle"
+                    data-aos="fade-down-right"
+                    data-aos-duration="1000"
+                    >
+                      Obtenha informações sobre quem está navegando em seu site,
+                      para que você possa tomar decisões de negócios mais
+                      inteligentes.
+                    </article>
+                  </div>
+                  <div class="col-lg-6">
+                    <h6>
+                      Código limpo
+                      <span class="icon"><i class="bi bi-stars"></i></span>
+                    </h6>
+                    <article
+                    class="twoArticle"
+                    data-aos="fade-down-left"
+                    data-aos-duration="1000"
+                    >
+                      Desenvolvimento seguindo os principais design patterns,
+                      com objetivo de tornar o código mais intuitivo, elegante e
+                      com fácil manutenção.
+                    </article>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </article>
+          <nav class="habilidades my-4 row">
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+              <div class="col-md-1"></div>
+              <div class="col-md-1">
+                <p
+                  class="paragraph service"
+                >
+                  <span>Ski</span>lls
+                </p>
+              </div>
+
+              <nav class="images" id="skills">
+                <img
+                  class="img-fluid"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
+                />
+
+                <img
+                  class="img-fluid"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
+                  alt="HTML"
+                  class="border"
+                />
+
+                <img
+                  class="img-fluid"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                  alt="HTML"
+                />
+
+                <img
+                  class="img-fluid"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
+                  alt="HTML"
+                />
+
+                <img
+                  class="img-fluid"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                  alt="HTML"
+                />
+
+                <img
+                  class="img-fluid"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                  alt="HTML"
+                />
+
+                <img
+                  class="img-fluid"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                />
+
+                <img
+                  class="img-fluid"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg"
+                />
+
+                <img
+                  class="img-fluid"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sequelize/sequelize-original.svg"
+                />
+
+                <img
+                  class="img-fluid"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
+                />
+
+                <img
+                  class="img-fluid"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg"
+                />
+
+                <img
+                  class="img-fluid"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original-wordmark.svg"
+                />
+                ...
+              </nav>
+            </div>
+            <div class="col-md-1"></div>
+          </nav>
+
+          <section id="contact" class="contacts my-4"></section>
+        </div>
+      </section>
+      <footer class="rodape border-top">
+        <section class="container-fluid">
+            <div class="row">
+                <article id="contact" class="col-md-3 d-flex flex-column align-items-center">
+                    <p class="paragraph ">mandelajunior10@gmail.com</p>
+                    <p class="paragraph">(+244) 937 537 126</p>
+                </article>
+                <div class="col-md-7">
+                  <p class="h6 paragraph">
+                    Agradeço por visitar meu portfólio e estou ansioso para conectar |
+                    trabalhar | colaborar com você!
+                  </p>
+                  Tozé Mandela | Todos direitos reservados&trade;
+                </div>
+                <aside class="col-md-2 social-midea">
+                    <div class="logo" id="contact">
+                        <p class="h1">
+                            <a href="https://wa.me/244937537126" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                            <a href="https://www.instagram.com/mandelajr12/" target="_blank"><i class="bi bi-instagram"></i></a>
+                            <a href="https://mailto:mandelajunior10@gmail.com" target="_blank"><i class="bi bi-envelope-at"></i></a>
+                        </p>
+                      </div>
+                </aside>
             </div>
         </section>
-        <footer class="rodape">
-
-        </footer>
+      </footer>
     </main>
 
     <!-- scripts Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- AOS scripts scroll -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
-</body>
+  </body>
 </html>
